@@ -2,15 +2,15 @@
 
 function myMap(arr, callback) {
 
-//  CODE INSIDE HERE   //
+
+var newArray = [];
+for (i=0; i<arr.length; i++){
+newArray[i]=callback(arr[i],i, arr);
+
 
 }
-
-/*
- Best if you don't code out here.
- If you want to check your code, use `index.js`!
-*/
-
+return newArray;
+}
 
 
 
@@ -18,4 +18,5 @@ function myMap(arr, callback) {
 
 
 // export this function (you can ignore this for now)
+
 module.exports = myMap;
